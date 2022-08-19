@@ -1,0 +1,107 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+body{
+	background-color: #e8e8e8;
+	font-family: Arial, Helvetica, sans-serif;
+}
+main{
+	margin: 100px;
+}
+.list-1, .list-2{
+	line-height: 36px;
+	font-size: 20px;
+	font-weight: 400;
+color: #273d46;
+padding: 0 0 81px 0;
+}
+.list-1 li:before{
+content: '';
+width: 25px;
+height: 20px;
+background: url('../images/check_icon.png')left no-repeat;
+background-size: 20px 14px;
+display: inline-block;
+padding: 0 30px 0 0 ;
+}
+.list-2 li:before{
+	content: '';
+	width: 25px;
+	height: 20px;
+	background: url('../images/check_icon.png') left no-repeat;
+	background-size: 20px 14px;
+	display: inline-block;
+	padding: 0 30px 0 0 ;
+	}
+	.list-2 li:nth-child(2):hover:before{
+		background: url('../images/check_icon_red.jpg')left no-repeat;
+		}
+		.list-2 li:nth-child(2):hover{
+			color: #d55a5a;
+			font-size: 25px;
+		}
+	.button{
+		display: block;
+		height: 44px;
+		width: 199px;
+		background: url('../images/Shape_2.png') 150px 15px no-repeat, #80b7b3;
+		border-radius: 50px;
+		text-align: left;
+		color: #fff;
+		padding: 0 0 0 25px;
+		font-weight: 400px;
+		text-transform: uppercase;
+		letter-spacing: 2.8px;
+		margin: 0 0 118px 0;
+	}
+	.button:hover{
+		background: url('../images/Shape_2.png') 150px 15px no-repeat, #3a5856;
+	}
+	.button:active{
+		background: url('../images/Shape_2.png') 150px 15px no-repeat, #818181;
+	}
+	.first-line, .first-leter{
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 28px;
+		color: black;
+		padding: 0 0 43px 0;
+	}
+	.first-line::first-line{
+		color: red;
+	}
+	.first-leter::first-letter{
+		color: red;
+		font-size: 25px;
+	}

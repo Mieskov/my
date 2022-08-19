@@ -1,0 +1,273 @@
+@import url('./resrt.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+	--container-width: 1270px;
+	--container-padding: 15px;
+	--secondary: rgba(15, 31, 28, 0.5);
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #F6F6F6;
+	color: #0F1F1C;
+}
+
+
+.none {
+	display: none !important;
+}
+
+.container {
+	max-width: var(--container-width);
+	margin: 0 auto;
+	min-width: 800px;
+	padding: 0 var(--container-padding);
+
+}
+
+
+
+/*header*/
+.header {
+	min-height: 940px;
+	background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+	padding-top: 44px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 96px;
+}
+
+.bottom_bg {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.header a {
+	color: #fff;
+}
+
+.header__top {}
+
+/*Nav*/
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__logo {
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.nav__list {
+	display: flex;
+	gap: 80px;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.nav__list a {
+	position: relative;
+}
+
+.nav__list a.active::after,
+.nav__list a:hover::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 10px;
+	bottom: -6px;
+	height: 4px;
+	background: #C4C4C4;
+	border-radius: 100px;
+}
+
+.nav__login {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.nav__login_btn {
+	display: inline-block;
+	padding: 13px 44px;
+	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+	border-radius: 100px;
+}
+
+.nav__login_btn:active {
+	position: relative;
+	bottom: -1px;
+}
+
+.nav__login_btn a:hover {
+	color: rgb(226, 226, 64);
+	transition: color 0.2s ease-in;
+}
+
+/*Header__content*/
+.header__content {
+	max-width: 592px;
+	position: relative;
+	z-index: 1;
+}
+
+.header__badge {
+	margin-bottom: 7px;
+	display: inline-block;
+	padding: 11px 30px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 18px;
+	background: rgba(255, 255, 255, 0.25);
+	border-radius: 15px;
+}
+
+.header__title {
+	font-weight: 400;
+	font-size: 55px;
+	line-height: 82px;
+	color: #FFFFFF;
+	margin-bottom: 30px;
+}
+
+.header__text {
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 38px;
+	color: #fff;
+	opacity: 0.5;
+	margin-bottom: 68px;
+}
+
+.header__btn {
+	display: inline-block;
+	padding: 27px 47px;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 38px;
+	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+	border-radius: 27px;
+}
+
+.header__btn a {
+	color: #FEFEFE;
+}
+
+.header__btn:active {
+	position: relative;
+	bottom: -1px;
+}
+
+.header__btn:hover {
+	color: rgb(226, 226, 64);
+	transition: color 0.2s ease-in;
+}
+
+.header__img {
+	position: absolute;
+	top: -35px;
+	right: 220px;
+	z-index: 0;
+}
+
+/*destinations*/
+.container-right {
+	padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+	margin-top: 100px;
+}
+
+.destinations {
+	overflow-x: hidden;
+
+}
+
+.container__row {
+	display: flex;
+	column-gap: 50px;
+	color: #0F1F1C;
+}
+
+.destinations__content {
+	max-width: 456px;
+}
+
+.destinations__title span {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 45px;
+
+}
+
+.destinations__title {
+	font-weight: 600;
+	font-size: 55px;
+	line-height: 82px;
+}
+
+.destinations__text p {
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 38px;
+	color: var(--secondary);
+	margin-bottom: 60px;
+}
+
+.destination__btn {
+	display: inline-block;
+	padding: 24px 44px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+	border-radius: 27px;
+}
+
+.destination__btn:active {
+	position: relative;
+	bottom: 1px;
+}
+
+.destination__btn a:hover {
+	color: rgb(226, 226, 64);
+	transition: color 0.2s ease-in;
+}
+
+.destination__btn a {
+	color: #FEFEFE;
+}
+
+/*Slider*/
+
+.destinations__slider {
+	width: 1110px;
+	flex-shrink: 0;
+
+}
+
+.slider {}
+
+.slider__item {
+	width: 335px;
+	height: 402px;
+	object-fit: cover;
+	border-radius: 35px;
+	transition: 0.2s ease-in;
+	margin-top: 27px;
+
+}
+
+.slider .center .slider__item {
+	width: 380px;
+	height: 456px;
+	margin-top: 0;
+}
